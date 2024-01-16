@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmployeeMasterPage.master.cs" Inherits="EmployeemanagementSystem.EmployeeMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        h1,h3{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div class="wrapper">
+        <div class="header">
+            <h1>Employee Management System</h1>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+          <div class="footer">
+             <h3>All Right Reserve to Chandramogali @2023</h3>
+          </div>
+      </div>
+    </form>
+</body>
+</html>
